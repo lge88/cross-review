@@ -93,7 +93,7 @@ class Graph:
       for u, v in path:
         self.incr_flow(u, v, delta)
         self.incr_flow(v, u, -delta)
-        path = self.find_path(s, t)
+      path = self.find_path(s, t)
 
     return sum(self.get_flow('source', u) for u in self.get_neighbors('source'))
 
