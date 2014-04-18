@@ -138,12 +138,12 @@ def print_map(m):
 
 def print_to_review_map(g):
   m = g.get_need_to_review_map()
-  print_header('ID', 'NEED_TO_REVIEW({})'.format(g.num_of_peers))
+  print_header('ID', 'NEED_TO_REVIEW({0})'.format(g.num_of_peers))
   print_map(m)
 
 def print_reviewed_by_map(g):
   m = g.get_reviewed_by_map()
-  print_header('ID', 'REVIEWED_BY({})'.format(g.num_of_peers))
+  print_header('ID', 'REVIEWED_BY({0})'.format(g.num_of_peers))
   print_map(m)
 
 def print_all(g):
