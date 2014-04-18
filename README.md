@@ -2,7 +2,7 @@ Usage: cross_review.py [file] [N] [OPTIONS]
   Given a list of peers, randomly assign reviewers to each peer.
 
   file
-    The file name of list of ids, if not provided, read from stdin.
+    The file name of list of ids. Use '-' to read file from stdin.
 
   N
     Number of reviewers. Default is 2.
