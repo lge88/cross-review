@@ -95,7 +95,7 @@ class Graph:
         self.incr_flow(v, u, -delta)
         path = self.find_path(s, t)
 
-    return sum(g.get_flow('source', u) for u in g.get_neighbors('source'))
+    return sum(self.get_flow('source', u) for u in self.get_neighbors('source'))
 
   def get_need_to_review_map(self):
     res = {}
