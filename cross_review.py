@@ -127,13 +127,6 @@ def read_stdin():
 def read_file(fname):
   return [line.strip() for line in open(fname)]
 
-def cross_review(peers, n):
-  n = int(sys.argv[1]) if argc > 2 else 2
-  g = Graph(peers, n)
-  max_flow = g.ford_fulkerson_max_flow()
-  assert(max_flow == len(peers)*n)
-  return (max_flow, g)
-
 def print_header(a, b):
   print "# %18s%20s" % (a, b)
 
